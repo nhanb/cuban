@@ -1,2 +1,5 @@
-# dev
+bottle
+youtube-dl
+
+# dev:
 ipython

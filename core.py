@@ -13,7 +13,7 @@ def init_db(db='playlist.sqlite3'):
         CREATE TABLE filenames (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             time_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            filename UNIQUE TEXT
+            filename TEXT UNIQUE
         );
         ''')
         conn.commit()
