@@ -1,5 +1,6 @@
 /songs/
 /playlist.sqlite3
+/*.ogg
 
 *.log
 *.pyc

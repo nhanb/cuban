@@ -8,7 +8,6 @@ def download_song(url):
     filename = f'{songs_dir}/{unique_name}.ogg'
     ydl_opts = {
         'format': 'bestaudio/best',
-        'outtmpl': filename,
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'vorbis',
@@ -18,7 +17,10 @@ def download_song(url):
         info_dict = ydl.extract_info(url, download=False)
         ydl.download([url])
 
-    return info_dict['title'], filename
+    title = info_dict['title']
+    video_id = info_dict['id']
+    tmp_filename = f'{title}-{video_id}.ogg'
+    return title, tmp_filename
 
 
 @post('/add/')
