@@ -35,7 +35,7 @@ def index():
     add_song(conn, filename)
     conn.close()
 
-    return f'Song "{title}" added to playlist'
+    return f'Song "{title}" added to playlist\nTune in at http://157.230.40.19:8000/main.ogg'
 
 
 run(host='0.0.0.0', port=8080)
