@@ -1,0 +1,3 @@
+/home/nhanb/pj/cuban/playlist/edbnao.ogg
+/home/nhanb/pj/cuban/playlist/wa.ogg
+#/home/nhanb/pj/cuban/playlist/tst30.ogg
