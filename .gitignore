@@ -1,1 +1,5 @@
-/playlist
+/songs/
+/playlist.sqlite3
+
+*.log
+*.pyc
